@@ -57,6 +57,7 @@ int is_clean(char* str) {
   char* cleaned;
   int result;
 
+  free(result);
   // We check if it's clean by calling strip and seeing if the
   // result is the same as the original string.
   cleaned = strip(str);
